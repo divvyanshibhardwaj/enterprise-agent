@@ -1,0 +1,21 @@
+name: Enterprise Code Checker
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  run-checker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Run Code Checker
+        run: python main.py sample.java

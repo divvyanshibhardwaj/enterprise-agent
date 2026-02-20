@@ -1,0 +1,13 @@
+{
+  "name": "code_checker",
+  "description": "Checks code quality rules",
+
+  "capabilities": {
+    "task_type": "code_analysis",
+    "language": ["java", "python"],
+    "input_type": "file",
+    "output_type": "json_report"
+  },
+
+  "trigger": ["code", "review", "check"]
+}

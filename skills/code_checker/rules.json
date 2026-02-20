@@ -1,0 +1,14 @@
+[
+  {
+    "id": "R001",
+    "description": "Avoid System.out.println",
+    "pattern": "System.out.println",
+    "severity": "MEDIUM"
+  },
+  {
+    "id": "R002",
+    "description": "Avoid hardcoded password",
+    "pattern": "password",
+    "severity": "HIGH"
+  }
+]
